@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Administracion de Prestamos</title>
+
+
+    <style>
+        nav {
+            margin: 27px auto 0;
+            position: relative;
+            width: 590px;
+            height: 50px;
+            background-color: #34495e;
+            border-radius: 8px;
+            font-size: 0;
+        }
+
+            nav a {
+                line-height: 50px;
+                height: 100%;
+                font-size: 15px;
+                display: inline-block;
+                position: relative;
+                z-index: 1;
+                text-decoration: none;
+                text-transform: uppercase;
+                text-align: center;
+                color: white;
+                cursor: pointer;
+            }
+
+            nav .animation {
+                position: absolute;
+                height: 100%;
+                top: 0;
+                z-index: 0;
+                transition: all .5s ease 0s;
+                border-radius: 8px;
+            }
+
+        a:nth-child(1) {
+            width: 100px;
+        }
+
+        a:nth-child(2) {
+            width: 110px;
+        }
+
+        a:nth-child(3) {
+            width: 100px;
+        }
+
+        a:nth-child(4) {
+            width: 160px;
+        }
+
+        a:nth-child(5) {
+            width: 120px;
+        }
+
+        nav .start-home, a:nth-child(1):hover ~ .animation {
+            width: 100px;
+            left: 0;
+            background-color: #1abc9c;
+        }
+
+        nav .start-about, a:nth-child(2):hover ~ .animation {
+            width: 110px;
+            left: 100px;
+            background-color: #e74c3c;
+        }
+
+        nav .start-blog, a:nth-child(3):hover ~ .animation {
+            width: 100px;
+            left: 210px;
+            background-color: #3498db;
+        }
+
+        nav .start-portefolio, a:nth-child(4):hover ~ .animation {
+            width: 160px;
+            left: 310px;
+            background-color: #9b59b6;
+        }
+
+        nav .start-contact, a:nth-child(5):hover ~ .animation {
+            width: 120px;
+            left: 470px;
+            background-color: #e67e22;
+        }
+
+        body {
+            font-size: 12px;
+            font-family: sans-serif;
+            background: #2c3e50;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 40px 0 40px;
+            text-align: center;
+            font-size: 30px;
+            color: #ecf0f1;
+            text-shadow: 2px 2px 4px #000000;
+            font-family: 'Cherry Swash', cursive;
+        }
+
+        p {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            color: #ecf0f1;
+            font-family: 'Cherry Swash',cursive;
+            font-size: 16px;
+        }
+
+        span {
+            color: #2BD6B4;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Préstamos</h1>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="https://c3abl642.caspio.com/dp/a52cb0008e33b25d1c2e45ddb2c7">Usuarios</a>
+        <a href="https://c3abl642.caspio.com/dp/a52cb000e895c5465d634aaaab3d">Prestamos</a>
+        <a href="https://c3abl642.caspio.com/dp/a52cb0004e898872e99745b28333">Pagos</a>
+        <a href="https://c3abl642.caspio.com/dp/a52cb000766da87cd12e467398fb">Resumen</a>
+        <div class="animation start-home"></div>
+    </nav>
+
+    <p>
+        By <span>Patak</span>
+    </p>
+</body>
+</html>
